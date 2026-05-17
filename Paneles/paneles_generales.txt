@@ -1,0 +1,291 @@
+PISTA: Sucede en el espacio
+FRASE: El astronauta flota ingrávido mientras observa nuestro planeta desde arriba
+
+PISTA: En la cocina
+FRASE: El cocinero prepara cada mañana los platos del día
+
+PISTA: Actividad de verano
+FRASE: Nos bañanmos en la playa con nuestros amigos del pueblo
+
+PISTA: Antes de dormir
+FRASE: Siempre me acuesto con los dientes limpios de pasta
+
+PISTA: Tradición española muy conocida
+FRASE: Los mozos corren ante los toros por las calles
+
+PISTA: Sucede con la correspondencia
+FRASE: El cartero reparte las cartas por todas las casas del barrio
+
+PISTA: Algo típico de la Navidad
+FRASE: Toda la familia adorna el árbol con bolas y guirnaldas
+
+PISTA: Lo que hace un buen aficionado al fútbol
+FRASE: Anima a su equipo con fuerza durante noventa minutos cada partido
+
+PISTA: Actividad típicaen familia
+FRASE: Los domingos comemos juntos alrededor de la mesa viendo el televisor
+
+PISTA: En la consulta
+FRASE: El médico examina a sus pacientes antes de dar el diagnóstico
+
+PISTA: Rutina matutina de higiene personal
+FRASE: Me ducho con agua fría todos los días del año
+
+PISTA: Ritual típico de la última noche del año
+FRASE: Nos comemos las doce uvas al son de las campanas del reloj
+
+PISTA: Lo que hace quien amasa y hornea por la madrugada
+FRASE: El panadero prepara el pan fresquito antes de que amanezca
+
+PISTA: Actividad escolar durante el descanso
+FRASE: Los niños juegan en el patio durante los recreos del colegio
+
+PISTA: Costumbre entrañable de los domingos con la familia
+FRASE: La abuela cocina los domingos para toda su familia
+
+PISTA: Ceremonia nupcial ante el altar
+FRASE: Los novios se pueden besar ante el altar con mucho amor
+
+PISTA: Hábito de quien trabaja la tierra al amanecer
+FRASE: El agricultor se levanta al amanecer para regar sus campos
+
+PISTA: Visita cultural típica de quienes recorren la capital
+FRASE: Los turistas visitan los museos y los parques de la ciudad
+
+PISTA: Lo que se hace en una tarde gris y lluviosa
+FRASE: Cuando la lluvia no para, nos quedamos en casa viendo la tele
+
+PISTA: Labor de quienes luchan contra el fuego
+FRASE: Los bomberos apagan el fuego en medio de un gran peligro
+
+PISTA: Ambiente festivo en una verbena popular
+FRASE: La gente baila toda la noche con mucha alegría en las fiestas
+
+PISTA: Faena de quien trabaja en alta mar antes del alba
+FRASE: El pescador tira sus redes al mar antes del amanecer
+
+PISTA: Hábito de quien se prepara para un examen difícil
+FRASE: El estudiante se queda repasando hasta tarde en su cuarto
+
+PISTA: Actuación de quien interpreta música en directo
+FRASE: El guitarrista toca sus canciones junto con todos sus compañeros
+
+PISTA: Escapada veraniega de toda la familia
+FRASE: Los veraneantes se escapan con sus hijos a la orilla del mar
+
+PISTA: Ambiente de silencio y concentración en un recinto cultural
+FRASE: La gente tranquila lee los libros con mucho silencio y calma
+
+PISTA: Desfile religioso propio de la primavera andaluza
+FRASE: Las procesiones recorren las calles con los pasos más espectaculares
+
+PISTA: Faena de quien imparte conocimientos frente a sus alumnos
+FRASE: El profesor explica los ejercicios en la pizarra
+
+PISTA: Actuación del juez en un encuentro deportivo
+FRASE: El árbitro pita las faltas durante noventa minutos sin descanso
+
+PISTA: Movimiento de quien practica el arte jondo
+FRASE: La bailaora mueve los brazos al son del ritmo flamenco
+
+PISTA: Tarea de quien captura momentos con su objetivo
+FRASE: El fotógrafo inmortaliza los mejores momentos con su cámara
+
+PISTA: En la playa
+FRASE: Los niños construyen en la arena castillos enormes con sus cubos
+
+PISTA: Labor de quien cuida animales enfermos
+FRASE: El veterinario cuida a los animales enfermos con mucho cariño
+
+PISTA: Euforia colectiva ante un tanto decisivo
+FRASE: El estadio entero se vuelve loco con el gol del campeonato
+
+PISTA: Lo que hace quien plasma paisajes con pincel y lienzo
+FRASE: El pintor plasma impresionantes paisajes con solo un pincel
+
+PISTA: Costumbre al regresar del trabajo por la tarde
+FRASE: Al llegar del trabajo nos ponemos ropa cómoda para descansar
+
+PISTA: Faena de quien conduce un vehículo de alquiler por la noche
+FRASE: El taxista lleva a sus clientes por toda la ciudad de madrugada
+
+PISTA: Ambiente mañanero en una terraza con churros
+FRASE: Los clientes desayuan en el bar churros con chocolate
+
+PISTA: Hazaña de quien escala hasta la cumbre
+FRASE: El montañero llega a la cima después de varios días de ascensión
+
+PISTA: Acto de dedicatoria de un autor a sus admiradores
+FRASE: Los escritores firman sus libros a sus seguidores más fieles
+
+PISTA: Celebración con velas y tarta por el aniversario de nacimiento
+FRASE: Todos cantamos el cupleaños feliz alrededor de la tarta
+
+PISTA: Oficio sagrado que se celebra en domingo
+FRASE: El cura celebra la misa del domingo ante todos los fieles
+
+PISTA: Proeza de quien conduce a gran velocidad en un circuito
+FRASE: El corredor rueda en el circuito con mucha velocidad impresionante
+
+PISTA: Juerga y baile en una verbena de agosto
+FRASE: Toda la gente sale a bailar y celebrar las fiestas del pueblo
+
+PISTA: Experiencia de quien orbita en gravedad cero
+FRASE: El astronauta flota ingrávido mientra observa nuestro planeta desde arriba
+
+PISTA: Elaboración de alta cocina con ingredientes exclusivos
+FRASE: El chef elabora recetas exclusivas con productos muy selectos
+
+PISTA: Momento de siembra y cuidado en la estación más colorida
+FRASE: El jardinero planta las flores coloridas para que luzcan todo el verano
+
+PISTA: Refrán popular
+FRASE: Más vale pájaro en mano que ciento volando por el campo
+
+PISTA: Canción española
+FRASE: Me lo dijo Pérez que te quiere ver esta noche en la plaza
+
+PISTA: Expresión cotidiana
+FRASE: No hay mal que por bien no venga si se tiene paciencia
+
+PISTA: Dicho castizo
+FRASE: A quien madruga Dios le ayuda con trabajo y esfuerzo
+
+PISTA: Frase romántica
+FRASE: Te quiero más que a mi propia vida y no puedo olvidarte
+
+PISTA: Refrán del campo
+FRASE: En abril aguas mil y en mayo el campo florece con alegría
+
+PISTA: Exclamación festiva
+FRASE: Esta noche nos vamos todos a bailar hasta que salga el sol
+
+PISTA: Consejo gastronómico
+FRASE: El gazpacho andaluz se toma bien frío en los días de verano
+
+PISTA: Sabiduría popular
+FRASE: El que no trabaja no come y el que duerme no avanza en nada
+
+PISTA: Dicho marinero
+FRASE: Cuando el mar está en calma el marinero no aprende a navegar
+
+PISTA: Descripción festiva
+FRASE: Los carnavales de Cádiz son los más divertidos de toda España
+
+PISTA: Filosofía de barrio
+FRASE: La vida es muy corta para pasarla enfadado con los demás
+
+PISTA: Expresión amorosa
+FRASE: Desde que te vi por primera vez no he podido dejar de pensar en ti
+
+PISTA: Proverbio clásico
+FRASE: No por mucho madrugar amanece más temprano en el horizonte
+
+PISTA: Anuncio televisivo
+FRASE: Porque tú lo vales aunque nadie más lo sepa en este mundo
+
+PISTA: Costumbre española
+FRASE: Los españoles se sientan a comer en familia los domingos al mediodía
+
+PISTA: Lugar turístico
+FRASE: La Sagrada Familia de Barcelona sigue siendo la obra inacabada de Gaudí
+
+PISTA: Refrán de invierno
+FRASE: Por Santa Bárbara bendita que el frío nos congela hasta los huesos
+
+PISTA: Expresión de asombro
+FRASE: No me lo puedo creer que hayas ganado el premio gordo de la lotería
+
+PISTA: Dicho culinario
+FRASE: La paella valenciana lleva pollo conejo y judías verdes de la huerta
+
+PISTA: Frase futbolística
+FRASE: El delantero marcó el gol decisivo en el último minuto del partido
+
+PISTA: Costumbre veraniega
+FRASE: Todos los veranos nos vamos de vacaciones al pueblo de los abuelos
+
+PISTA: Expresión irónica
+FRASE: Menuda suerte tiene el que nace en cuna de oro y no lo aprecia
+
+PISTA: Refrán meteorológico
+FRASE: Cielo encapotado a la mañana lleva lluvia por la tarde segura
+
+PISTA: Frase literaria
+FRASE: En un lugar de la Mancha de cuyo nombre no quiero acordarme ahora
+
+PISTA: Dicho familiar
+FRASE: Los hijos de mis hijos son el mayor regalo que me ha dado la vida
+
+PISTA: Expresión callejera
+FRASE: No hay dos sin tres y al tercero le tocará la china esta vez
+
+PISTA: Situación laboral
+FRASE: El jefe llegó tarde a la reunión y nadie se atrevió a decirle nada
+
+PISTA: Sabiduría abuela
+FRASE: Más sabe el diablo por viejo que por diablo dice mi abuela siempre
+
+PISTA: Costumbre navideña
+FRASE: En Nochebuena toda la familia se reúne alrededor de la mesa a cenar
+
+PISTA: Experiencia viajera
+FRASE: Quien no ha visto Granada no ha visto nada en este mundo tan bello
+
+PISTA: Frase deportiva
+FRASE: El equipo entrenó muy duro durante toda la semana para ganar el título
+
+PISTA: Consejo materno
+FRASE: Abrígate bien antes de salir que esta noche hace muchísimo frío
+
+PISTA: Expresión optimista
+FRASE: Después de la tormenta siempre llega la calma y todo se arregla solo
+
+PISTA: Dicho taurino
+FRASE: El torero saludó al tendido después de una faena brillante en la plaza
+
+PISTA: Expresión nostálgica
+FRASE: Cualquier tiempo pasado fue mejor cuando éramos jóvenes y no lo sabíamos
+
+PISTA: Situación cotidiana
+FRASE: Se me olvidaron las llaves dentro de casa y tuve que llamar al cerrajero
+
+PISTA: Frase flamenca
+FRASE: La guitarra llora cuando el cantaor entona su copla más dolorosa
+
+PISTA: Refrán sentimental
+FRASE: El amor es ciego y los enamorados no quieren ver lo que está pasando
+
+PISTA: Descripción gastronómica
+FRASE: El cocido madrileño se sirve en tres vuelcos y calienta el cuerpo entero
+
+PISTA: Frase de mercado
+FRASE: La fruta y la verdura están más baratas si las compras directamente al agricultor
+
+PISTA: Expresión cómica
+FRASE: No hay nadie en el mundo más despistado que mi vecino del quinto piso
+
+PISTA: Sabiduría marinera
+FRASE: El viento del norte trae mal tiempo y los barcos no salen del puerto
+
+PISTA: Dicho estudiantil
+FRASE: El que estudia de noche duerme con los libros debajo de la almohada
+
+PISTA: Situación vecinal
+FRASE: El de arriba volvió a hacer ruido hasta las tantas de la madrugada
+
+PISTA: Expresión esperanzadora
+FRASE: Mañana será otro día y todo se verá con mejores ojos al despertar
+
+PISTA: Frase carnavalesca
+FRASE: Las chirigotas gaditanas se ríen de todo con mucha gracia y salero
+
+PISTA: Refrán primaveral
+FRASE: Cuando marzo mayea mayo marcea y el tiempo no sabe qué quiere
+
+PISTA: Costumbre cofrade
+FRASE: Los nazarenos salen en procesión por las calles en Semana Santa solemne
+
+PISTA: Frase de sobremesa
+FRASE: Después de comer ni un sobre mover aunque truene y granice fuerte
+

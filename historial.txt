@@ -1,0 +1,1 @@
+historial_concursante(ana,1,0,550,550).

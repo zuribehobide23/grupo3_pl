@@ -1,0 +1,256 @@
+
+% ============================
+% CAMBIOS RECOMENDADOS PARA copi2.pl
+% ============================
+
+% =========================================================
+% 1) REEMPLAZAR LA CARGA DE FRASES (MUY IMPORTANTE)
+% =========================================================
+
+% ELIMINAR ESTO:
+
+% split_string(FraseConEspacios, "", " \t\r\n", [Frase])
+
+% Y AÑADIR ESTOS AUXILIARES:
+
+trim_string(String, Cleaned) :-
+    string_chars(String, Chars),
+    exclude(is_newline, Chars, NoNewlines),
+    trim_leading(NoNewlines, LeadingCleaned),
+    reverse(LeadingCleaned, Reversed),
+    trim_leading(Reversed, TrailingCleaned),
+    reverse(TrailingCleaned, FinalChars),
+    string_chars(Cleaned, FinalChars).
+
+is_newline('\r').
+is_newline('\n').
+
+trim_leading([' '|T], R) :- !, trim_leading(T, R).
+trim_leading(['\t'|T], R) :- !, trim_leading(T, R).
+trim_leading(L, L).
+
+% Y CAMBIAR leer_lineas_paneles/2 POR ESTO:
+
+leer_lineas_paneles(_, end_of_file) :- !.
+
+leer_lineas_paneles(Stream, Linea) :-
+    sub_string(Linea, 0, 7, _, "PISTA: "), !,
+
+    sub_string(Linea, 7, _, 0, PistaConEspacios),
+    trim_string(PistaConEspacios, PistaClean),
+
+    read_line_to_string(Stream, LineaFrase),
+
+    ( sub_string(LineaFrase, 0, 8, _, "FRASE: ") ->
+
+        sub_string(LineaFrase, 8, _, 0, FraseConEspacios),
+        trim_string(FraseConEspacios, FraseClean),
+
+        atom_string(PistaAtom, PistaClean),
+        atom_string(FraseAtom, FraseClean),
+
+        assertz(panel(PistaAtom, FraseAtom))
+
+    ; true ),
+
+    read_line_to_string(Stream, Siguiente),
+    leer_lineas_paneles(Stream, Siguiente).
+
+leer_lineas_paneles(Stream, _) :-
+    read_line_to_string(Stream, Siguiente),
+    leer_lineas_paneles(Stream, Siguiente).
+
+
+
+% =========================================================
+% 2) VALIDACIÓN REAL DE CONSONANTES Y VOCALES
+% =========================================================
+
+es_consonante(C) :-
+    member(C,
+    [b,c,d,f,g,h,j,k,l,m,n,ñ,p,q,r,s,t,v,w,x,y,z,
+     'B','C','D','F','G','H','J','K','L','M','N','Ñ',
+     'P','Q','R','S','T','V','W','X','Y','Z']).
+
+es_vocal(V) :-
+    member(V,
+    [a,e,i,o,u,
+     'A','E','I','O','U',
+     á,é,í,ó,ú,
+     'Á','É','Í','Ó','Ú']).
+
+
+
+% =========================================================
+% 3) ARREGLAR resolver_panel/1
+% =========================================================
+
+% REEMPLAZAR:
+
+% Propuesta == Frase
+
+% POR:
+
+downcase_atom(Propuesta, P1),
+downcase_atom(Frase, P2),
+P1 = P2
+
+
+
+% =========================================================
+% 4) EVITAR DUPLICADOS DE GAJOS
+% =========================================================
+
+:- use_module(library(lists)).
+
+% REEMPLAZAR:
+
+% append(GajosV, GajosP, NuevosGajos)
+
+% POR:
+
+union(GajosV, GajosP, NuevosGajos)
+
+
+
+% =========================================================
+% 5) DOBLE LETRA CORREGIDO
+% =========================================================
+
+% REEMPLAZAR ESTA PARTE:
+
+( retract(doble_letra_activa) ->
+    writeln('¡Efecto Doble Letra consumido! Elige otra consonante directa.')
+;   retractall(ultimo_giro(_))
+)
+
+% POR ESTO:
+
+( doble_letra_activa ->
+    retractall(doble_letra_activa),
+    writeln('¡Doble Letra usada! Puedes elegir otra consonante sin girar.')
+;   retractall(ultimo_giro(_))
+)
+
+
+
+% =========================================================
+% 6) IMPEDIR SÍMBOLOS COMO CONSONANTES
+% =========================================================
+
+% AÑADIR AL PRINCIPIO DE elegir_consonante/1
+
+elegir_consonante(Letra) :-
+    \+ es_consonante(Letra), !,
+    throw('Error. Debes introducir una consonante valida.').
+
+
+
+% =========================================================
+% 7) EVITAR RESOLVER SIN GIRAR
+% =========================================================
+
+resolver_panel(_) :-
+    panel_actual(Tipo, _, _, _),
+    Tipo \= final,
+    \+ ultimo_giro(_),
+    !,
+    throw('Error. Debes lanzar la ruleta antes de intentar resolver.').
+
+
+
+% =========================================================
+% 8) LIMPIAR ultimo_giro SIEMPRE
+% =========================================================
+
+% AÑADIR EN avanzar_flujo_paneles:
+
+retractall(ultimo_giro(_)).
+
+% Y TAMBIÉN EN finalizar_partida_formal:
+
+retractall(ultimo_giro(_)).
+
+
+
+% =========================================================
+% 9) PROTEGER EL PANEL FINAL
+% =========================================================
+
+% AÑADIR:
+
+:- dynamic letras_finales_elegidas/1.
+
+% NUEVO PREDICADO:
+
+elegir_letras(C1,C2,C3,C4,V) :-
+
+    es_consonante(C1),
+    es_consonante(C2),
+    es_consonante(C3),
+    es_consonante(C4),
+    es_vocal(V),
+
+    downcase_atom(C1,LC1),
+    downcase_atom(C2,LC2),
+    downcase_atom(C3,LC3),
+    downcase_atom(C4,LC4),
+    downcase_atom(V,LV),
+
+    Lista = [LC1,LC2,LC3,LC4,LV],
+
+    sort(Lista, Ordenada),
+    length(Ordenada, 5),
+
+    retractall(letras_finales_elegidas(_)),
+    assertz(letras_finales_elegidas(Lista)),
+
+    writeln('Letras del Panel Final registradas correctamente.').
+
+
+
+% =========================================================
+% 10) PANEL FINAL MÁS CORRECTO
+% =========================================================
+
+% REEMPLAZAR panel_final_inicial/1 POR:
+
+panel_final_inicial(F) :-
+
+    juego_iniciado,
+
+    panel_n(N),
+    obtener_configuracion(numero_paneles, MaxNormales),
+
+    N =:= MaxNormales + 2,
+
+    panel_actual(final, _, FraseOriginal, _),
+
+    Base = [r,s,t,l,n,e],
+
+    ocultar_frase(FraseOriginal, Base, F),
+
+    writeln('Panel Final preparado correctamente.').
+
+
+
+% AUXILIARES:
+
+ocultar_frase(Frase, Letras, Resultado) :-
+    atom_chars(Frase, Chars),
+    maplist(ocultar_char(Letras), Chars, Nuevos),
+    atom_chars(Resultado, Nuevos).
+
+ocultar_char(_, ' ', ' ') :- !.
+
+ocultar_char(Letras, Char, Char) :-
+    downcase_atom(Char, C),
+    member(C, Letras), !.
+
+ocultar_char(_, _, '_').
+
+
+
+% =========================================================
+% FIN
+% =========================================================
